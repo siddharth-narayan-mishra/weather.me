@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background{
+    background-image: url('https:source.unsplash.com/1600x900/?landscape');
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    width: 100dvw;
+    height: 40dvh;    
+    color: black;
+    text-shadow:
+        0.07rem 0 white,
+        0 0.07rem white,
+        -0.07rem 0 white,
+        0 -0.07rem white;
+}
+
+.heading{
+    margin: 1% 0 0 3%;
+    display: inline-block;
+    width: 24%;
+}
+
+.input{
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    border-left: solid black;
+    border-bottom: solid black;
+    color: white;
+    text-shadow: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+.search-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);    
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow:
+        0.07rem 0 white,
+        0 0.07rem white,
+        -0.07rem 0 white,
+        0 -0.07rem white;
+}
+
+.main{
+    width: 100dvw;
+    height: 25dvh;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.details{
+    width: 42.5dvw;
+    height: 25dvh;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-start;
+}
+
+.details>div{
+    margin: 2.5% 0 2.5% 0;
+}
+
+.ver-divider{
+    height: 80%;
+    border: solid white;
+    margin: 0;
+    border-width: 0 1px 0 1px;
+    opacity: 0.5;
+}
+
+.big-icon{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.big-icon img{
+    height: 80px;
+}
+.temp{
+    height: 80%;
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date{
+    font-weight: bold;
+    font-size: 17px;
+}
+.big-temp{
+    margin: -10px 0 -10px 0;
+    font-size: 80px;
+    color: rgb(255, 131, 8);
+    text-shadow:
+        0.05rem -0.05rem black,
+        0.05rem 0.05rem black;
+
+}
+.more-details{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.hourly{
+    width: 42.5dvw;
+    height: 25dvh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hcard{
+    width: 11%;
+    height: 18dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hcard img{
+    width: 90%;
+}
+
+.htemp{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer{
+    width: 100%;
+    height: 35dvh;
+    background-image: linear-gradient(transparent 0%, black 100%);
+    backdrop-filter: blur(1px);
+    
+    text-shadow:
+        0.05rem 0 black,
+        0 0.05rem black;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    height: 70%;
+    width: 8%;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-date{
+    font-weight: 600;
+}
+.card div{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.card div img{
+    height: 50px;
+    margin: 10px 0 5px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .heading{
+        margin:none;
+        width: auto;
+    }
+    .header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20dvh;
+    }
+
+    .details{
+        display: block;
+        height: 50dvh;
+        width: 70dvw;
+    }
+
+    .main{
+        justify-content: center;
+    }
+
+    .hourly{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+    .more-details{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+    .big-icon{
+        height: 20dvh;
+    }
+    .ver-divider{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+    .footer{
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+    .card{        
+        opacity: 0;
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+  }
